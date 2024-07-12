@@ -15,6 +15,7 @@ django-on-heroku = "*"
 requests = "*"
 pandas = "*"
 beautifulSoup4 = "*"
+lxml = "*"
 
 [dev-packages]
 autopep8 = "*"
