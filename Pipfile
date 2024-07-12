@@ -12,6 +12,9 @@ django-cors-headers = "*"
 python-dotenv = "*"
 dj-database-url = "*"
 django-on-heroku = "*"
+requests = "*"
+pandas = "*"
+beautifulSoup4 = "*"
 
 [dev-packages]
 autopep8 = "*"
