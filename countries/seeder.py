@@ -51,7 +51,7 @@ def load_countries():
 
 
 def load_visa_requirements():
-    countries = Country.objects.filter(name="Guinea-Bissauan")
+    countries = Country.objects.filter()
 
     for country in countries:
         time.sleep(0.5)
