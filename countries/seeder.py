@@ -1,9 +1,9 @@
-# import json
+import json
 from functools import reduce
 from .models import Country 
 from country_to_travel.models import CountryToTravel
 from types_of_visa.models import Visa
-# from .serializer.common import CountrySerializer
+from .serializer.common import CountrySerializer
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -11,46 +11,43 @@ from django.db.models import Q
 import time
 from io import StringIO
 
-# def load_countries():
+def load_countries():
 
-#     country_file_path = "./countrySeed.json"
-#     flags_file_path = "./countryInfo.json"
+    country_file_path = "./countrySeed.json"
+    flags_file_path = "./countryInfo.json"
 
    
-#     with open(flags_file_path, 'r') as flags_file:
-#         flags_data = json.load(flags_file)
+    with open(flags_file_path, 'r') as flags_file:
+        flags_data = json.load(flags_file)
         
-#         flags_dict = {country['name']['common']: country['flags']['svg'] for country in flags_data}
+        flags_dict = {country['name']['common']: country['flags']['svg'] for country in flags_data}
 
    
-#     with open(country_file_path, 'r') as countries_file:
-#         countries_data = json.load(countries_file)
+    with open(country_file_path, 'r') as countries_file:
+        countries_data = json.load(countries_file)
 
-#         for country_data in countries_data:
-#             country_name = country_data['name']
+        for country_data in countries_data:
+            country_name = country_data['name']
 
-#             existing_country = Country.objects.filter(name=country_name).first()
+            existing_country = Country.objects.filter(name=country_name).first()
 
-#             if not existing_country:
+            if not existing_country:
                 
-#                 flag_url = flags_dict.get(country_name, None)
-#                 if flag_url:
-#                     country_data['flag'] = flag_url  
-#                 else:
-#                     print(f"Flag not found for country '{country_name}'")
+                flag_url = flags_dict.get(country_name, None)
+                if flag_url:
+                    country_data['flag'] = flag_url  
+                else:
+                    print(f"Flag not found for country '{country_name}'")
 
                 
-#                 serializer = CountrySerializer(data=country_data)
-#                 if serializer.is_valid():
-#                     serializer.save()
-#                     print(f"Created: Country '{country_name}'")
-#                 else:
-#                     print(f"Error creating country '{country_name}': {serializer.errors}")
-#             else:
-#                 print(f"Skipping: Country '{country_name}' already exists.")
-
-# load_countries()
-
+                serializer = CountrySerializer(data=country_data)
+                if serializer.is_valid():
+                    serializer.save()
+                    print(f"Created: Country '{country_name}'")
+                else:
+                    print(f"Error creating country '{country_name}': {serializer.errors}")
+            else:
+                print(f"Skipping: Country '{country_name}' already exists.")
 
 
 def load_visa_requirements():

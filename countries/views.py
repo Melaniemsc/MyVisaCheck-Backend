@@ -1,16 +1,13 @@
 from rest_framework.views import APIView 
 from rest_framework.response import Response
 from rest_framework import status
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
 
 from .models import Country
 from .serializer.common import CountrySerializer
 from country_to_travel.models import CountryToTravel
 from types_of_visa.models import Visa
 from rest_framework.exceptions import NotFound
-from .seeder import load_visa_requirements
+from .seeder import load_visa_requirements, load_countries
 from rest_framework.permissions import IsAdminUser
 from project.custom_permissions import IsAdminOrReadOnly
 
@@ -68,6 +65,14 @@ class CountryVisaRequirement(APIView):
     def post(self, request):
         load_visa_requirements();
         return Response("Country Visa Requirement Generated", status=status.HTTP_201_CREATED)
+
+class CountrysSeed(APIView):
+    permission_classes = (IsAdminUser, )
+
+    def post(self, request):
+        load_countries();
+        return Response("Countries generated", status=status.HTTP_201_CREATED)
+
 
 
 class Visa_requirement:
