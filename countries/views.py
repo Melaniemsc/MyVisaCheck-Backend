@@ -11,7 +11,8 @@ from country_to_travel.models import CountryToTravel
 from types_of_visa.models import Visa
 from rest_framework.exceptions import NotFound
 from .seeder import load_visa_requirements
-from rest_framework.permissions import IsAdminUser, IsAdminOrReadOnly
+from rest_framework.permissions import IsAdminUser
+from project.custom_permissions import IsAdminOrReadOnly
 
 
 class CountrylistView(APIView):

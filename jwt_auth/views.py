@@ -11,8 +11,6 @@ from countries.models import Country
 from rest_framework.permissions import IsAuthenticated
 import jwt 
 
-from rest_framework.permissions import IsAdminUser, IsAdminOrReadOnly
-
 
 User = get_user_model()
 

@@ -11,7 +11,8 @@ from types_of_visa.models import Visa
 from countries.models import Country
 from .models import CountryToTravel
 from .serializer.populated import PopulatedCountryToTravelSerializer
-from rest_framework.permissions import IsAdminUser, IsAdminOrReadOnly
+from rest_framework.permissions import IsAdminUser
+from project.custom_permissions import IsAdminOrReadOnly
 
 
 class CountryToTravelView(APIView):
