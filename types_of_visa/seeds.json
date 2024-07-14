@@ -1,0 +1,135 @@
+[
+{
+  "model": "types_of_visa.visa",
+  "pk": 1,
+  "fields": {
+    "type": "Visa Required"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 2,
+  "fields": {
+    "type": "Visa not required"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 3,
+  "fields": {
+    "type": "Freedom of movement"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 4,
+  "fields": {
+    "type": "eVisa"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 5,
+  "fields": {
+    "type": "Online Visa required"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 6,
+  "fields": {
+    "type": "Visa on arrival"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 7,
+  "fields": {
+    "type": "Tourist card required"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 8,
+  "fields": {
+    "type": "e-VOA"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 9,
+  "fields": {
+    "type": "Electronic Travel Authorization"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 10,
+  "fields": {
+    "type": "Electronic Travel Authorisation"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 11,
+  "fields": {
+    "type": "Free visa on arrival"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 12,
+  "fields": {
+    "type": "Online Visa"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 13,
+  "fields": {
+    "type": "Electronic Border System"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 14,
+  "fields": {
+    "type": "eVisitor"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 15,
+  "fields": {
+    "type": "Freedom of movement (mainland Denmark)"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 16,
+  "fields": {
+    "type": "ETA-IL"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 17,
+  "fields": {
+    "type": "Electronical Travel Authorization"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 18,
+  "fields": {
+    "type": "Freedom of movement (European Netherlands)"
+  }
+},
+{
+  "model": "types_of_visa.visa",
+  "pk": 19,
+  "fields": {
+    "type": "NZeTA"
+  }
+}
+]
