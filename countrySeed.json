@@ -100,10 +100,6 @@
         "nationality": "Brazilian"
     },
     {
-        "name": "Brunei Darussalam",
-        "nationality": "Bruneian"
-    },
-    {
         "name": "Bulgaria",
         "nationality": "Bulgarian"
     },
@@ -116,7 +112,7 @@
         "nationality": "Burundian"
     },
     {
-        "name": "Cabo Verde",
+        "name": "Cape Verde",
         "nationality": "Cape Verdean"
     },
     {
@@ -160,10 +156,6 @@
         "nationality": "Republic of the Congo"
     },
     {
-        "name": "Congo (Democratic Republic of the)",
-        "nationality": "Democratic Republic of the Congo"
-    },
-    {
         "name": "Costa Rica",
         "nationality": "Costa Rican"
     },
@@ -184,7 +176,7 @@
         "nationality": "Cypriot"
     },
     {
-        "name": "Czech Republic",
+        "name": "Czechia",
         "nationality": "Czech"
     },
     {
@@ -300,7 +292,7 @@
         "nationality": "Haitian"
     },
     {
-        "name": "Vatican City State",
+        "name": "Vatican City",
         "nationality": "Vatican"
     },
     {
@@ -588,7 +580,7 @@
         "nationality": "Romanian"
     },
     {
-        "name": "Russian Federation",
+        "name": "Russia",
         "nationality": "Russian"
     },
     {
@@ -700,11 +692,11 @@
         "nationality": "Swiss"
     },
     {
-        "name": "Syrian Arab Republic",
+        "name": "Syria",
         "nationality": "Syrian"
     },
     {
-        "name": "Taiwan, Province of China",
+        "name": "Taiwan",
         "nationality": "Taiwanese"
     },
     {
@@ -764,11 +756,11 @@
         "nationality": "Emirati"
     },
     {
-        "name": "United Kingdom of Great Britain and Northern Ireland",
+        "name": "United Kingdom",
         "nationality": "British"
     },
     {
-        "name": "United States of America",
+        "name": "United States",
         "nationality": "United States"
     },
     {
