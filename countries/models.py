@@ -6,6 +6,6 @@ class Country(models.Model):
     return f'{self.name}'
   name = models.CharField(max_length=200)
   nationality = models.CharField(max_length=80)
-  flag = models.CharField(max_length=300, required= False)
+  flag = models.CharField(max_length=300, blank=True)
 
 
