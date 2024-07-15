@@ -72,6 +72,6 @@ class UserSummaryView(APIView):
     def delete (self,request,):
         print('Request data:', request.data)
         user = self.get_user(request)
-        user.nationality.remove(get_object_or_404(Country, nationality= request.data.get('nationality')))
+        user.nationality.remove(get_object_or_404(Country, name= request.data.get('country')))
         user.save()
         return Response({'message': 'Nationality deleted successfully'}, status=status.HTTP_200_OK)
